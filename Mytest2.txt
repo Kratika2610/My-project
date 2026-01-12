@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students [
+  <!ELEMENT students (studentdetails+)>
+  <!ELEMENT studentdetails (name, email, contact, address)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+  <!ELEMENT contact (#PCDATA)>
+  <!ELEMENT address (#PCDATA)>
+]>
+<students>
+  <studentdetails>
+    <name>Ajay</name>
+    <email>ajay12@gmail.com</email>
+    <contact>897689876</contact>
+    <address>talwade,pune</address>
+  </studentdetails>
+
+  <studentdetails>
+    <name>Amith</name>
+    <email>amith12@gmail.com</email>
+    <contact>899999</contact>
+    <address>hinjawadi,pune</address>
+  </studentdetails>
+</students>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students [
+  <!ELEMENT students (studentdetails+)>
+  <!ELEMENT studentdetails (name, email, contact, address)>
+  <!ELEMENT name (#PCDATA| firstname|lastname)*>
+  <!ELEMENT firstname (#PCDATA)>
+  <!ELEMENT lastname (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+  <!ELEMENT contact (#PCDATA)>
+  <!ELEMENT address (#PCDATA)>
+]>
+
+<students>
+  <studentdetails>
+    <name>MY name is <firstname>Ajay</firstname><lastname>Malika</lastname></name>
+    <email>ajay12@gmail.com</email>
+    <contact>897689876</contact>
+    <address>talwade,pune</address>
+  </studentdetails>
+  
+</students>
+
+<!-- empty write empty instead of PCDATA
+any write any after studentdetails any -->
+
+<!-- Data type
+PCDATA : no special characters are allowed
+CDATA : allow special characters
+ENUMERATED
+ID
+IDREF,IDREFS
+NMTOKEN,NMTOKENS 
+NOTATION
+
+Attribute specifier
+#REQUIRED : it is mandatory if it is said to write type in address so it will be mandatory.
+#IMPLIED : it is not mandatory 
+#FIXED : it will fixed any type like for address type will be fixed it will not take office as a type.
+default: it is mandatory to write type but no need of fixed type, not specifier
+
+-->
